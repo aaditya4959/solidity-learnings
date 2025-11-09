@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_category",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_numberOfTyres",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "description",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "numberOfTyres",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/3_car.sol": "Car"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2_vehicle.sol": {
+			"keccak256": "0x9e9a1ca40ba8d91a9cc75c432dc8aff966a6ccec57b8b3de804a43001f43cb00",
+			"urls": [
+				"bzz-raw://3789c643b0c34360e0040d3ebe48d66bd5dfc666713c6f29607c9859c8f1df27",
+				"dweb:/ipfs/QmemKG6ckNaohFkn1FdxLNhCbJNSC6UVuZVsfw9R3iBHiz"
+			]
+		},
+		"contracts/3_car.sol": {
+			"keccak256": "0xacd357d43428714ccc6aa5fb4cc68d6217f738a8e7769cb95521ab5f7a35cff0",
+			"urls": [
+				"bzz-raw://d0fa1387599994742b48e267e74b017fb70d3057781de421a01ddc6e637ac7c4",
+				"dweb:/ipfs/QmaTCdx6DVEZD9oVagf6Y9k7egNTfp3C88jTfwwdNvMxNH"
+			]
+		}
+	},
+	"version": 1
+}
