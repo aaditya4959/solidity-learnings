@@ -9,21 +9,24 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_category",
+						"name": "_name",
 						"type": "string"
-					},
-					{
-						"internalType": "uint32",
-						"name": "_numberOfTyres",
-						"type": "uint32"
 					}
 				],
+				"name": "addName",
+				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "description",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "getName",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -31,17 +34,23 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "numberOfTyres",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "names",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -61,7 +70,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/3_car.sol": "Car"
+			"contracts/4_mapping.sol": "Map"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -75,20 +84,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/2_vehicle.sol": {
-			"keccak256": "0xf33326ac08ac2367fd045933bc44d3ede6c955cf5bdaa782b93961cca43130b4",
+		"contracts/4_mapping.sol": {
+			"keccak256": "0xe4f32db18a1a7115c3163ad7ff71d81e329de4fd3b0585422f6ab957b369e319",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://e8efb2cb68cd1d47b3fb4092a8d79de459ff61f55f227d096f0f577812395ef5",
-				"dweb:/ipfs/QmPoexvpKaTyxG7Ben9PKf4eR2Soua2ihca2JVEmmcmBdP"
-			]
-		},
-		"contracts/3_car.sol": {
-			"keccak256": "0x043f28e0e31def00f6754891b25ad5540bb26be2e7790674d269928485384ece",
-			"license": "UNLICENSED",
-			"urls": [
-				"bzz-raw://dc0e8149ed10b17b04730b552736c5de440db9525e39cf52d7812b928b031478",
-				"dweb:/ipfs/Qmb875mkbq9jBpSVymdjfTSwZ3fb2JDKNK4r9hr1p2SgSf"
+				"bzz-raw://83854e1d55a6905d31c21aa7b6d96c93eb04815125b6a32e3cfb53d664c13a63",
+				"dweb:/ipfs/QmfFUef32VGTSRWU7UruDdHfM6FpZ3s9aLuX9CKqF3iarE"
 			]
 		}
 	},

@@ -58,10 +58,11 @@
 	},
 	"sources": {
 		"contracts/2_vehicle.sol": {
-			"keccak256": "0x9e9a1ca40ba8d91a9cc75c432dc8aff966a6ccec57b8b3de804a43001f43cb00",
+			"keccak256": "0xf33326ac08ac2367fd045933bc44d3ede6c955cf5bdaa782b93961cca43130b4",
+			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://3789c643b0c34360e0040d3ebe48d66bd5dfc666713c6f29607c9859c8f1df27",
-				"dweb:/ipfs/QmemKG6ckNaohFkn1FdxLNhCbJNSC6UVuZVsfw9R3iBHiz"
+				"bzz-raw://e8efb2cb68cd1d47b3fb4092a8d79de459ff61f55f227d096f0f577812395ef5",
+				"dweb:/ipfs/QmPoexvpKaTyxG7Ben9PKf4eR2Soua2ihca2JVEmmcmBdP"
 			]
 		}
 	},
