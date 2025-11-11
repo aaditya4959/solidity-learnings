@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/9_storage2.sol": "Storage"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/9_storage2.sol": {
+			"keccak256": "0x6b3b104424e9d8b656ef29d3ab960026bab596bde96292bb027a0a80006954f0",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://55aa98d7a7fcd7d4de1fa2f83b18384d9b3009038a022f7e2b434a621a51a19c",
+				"dweb:/ipfs/QmNXCvGnpB2WkgSa7pmyNRV89BGiiwyhuc6rxpw31G5Pxm"
+			]
+		}
+	},
+	"version": 1
+}
