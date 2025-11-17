@@ -8,6 +8,13 @@ contract BirCoin {
     address public owner;
 
     mapping(address => uint) public balances;
+    // the allowance mapping
+    mapping(address => mapping( address => uint ) ) public allowance;
+
+    //events according to the ERC-20
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approve(address indexed owner, address indexed spender, uint256 value);
 
     constructor(){
         owner = msg.sender;
@@ -24,7 +31,25 @@ contract BirCoin {
         supply+= amount;
     }
 
-    function sendTo ( address to , uint amount ) public {
+    //Allowance Function
+    function allow (address to, uint amount ) public {
+        allowance[msg.sender][to] += amount;
+        emit Approve(msg.sender, to, amount);
+    }
+
+    // Transfer allowance function 
+    function transferFrom( address from , address to, uint amount ) public {
+        uint balance = balances[from];
+        require(balance >= amount , "Balance is insufficient");
+        uint allowedAmount = allowance[from][msg.sender];
+        require(allowedAmount >= amount );
+        balances[from] -= amount;
+        balances[to] += amount;
+        allowance[from][msg.sender] -= amount;
+        emit Transfer(from, to, amount);
+    }
+
+    function transfer( address to , uint amount ) public {
         require (amount <= balances[msg.sender], "Balance is insufficient");
         balances[msg.sender] -=amount;
         balances[to] += amount;
