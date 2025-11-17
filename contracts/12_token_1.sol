@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
+// As ERC-20 is aready written so we can write this contract by extending the abse ERC-20 only.
+
 
 contract BirCoin {
     string public name = "BirCoin";

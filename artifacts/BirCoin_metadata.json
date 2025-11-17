@@ -11,6 +11,98 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approve",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "allow",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -87,6 +179,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "supply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -99,22 +204,32 @@
 						"type": "uint256"
 					}
 				],
-				"name": "sendTo",
+				"name": "transfer",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "supply",
-				"outputs": [
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "transferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -146,11 +261,11 @@
 	},
 	"sources": {
 		"contracts/12_token_1.sol": {
-			"keccak256": "0x679e40271d581418579824d2eba4904efe3b403c245828121c0fc3dbddc905d9",
+			"keccak256": "0xc1a89f530e87b837937e73265fc3cd9430a307020604a216760928a9df436542",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://dee81017b618c8820542586dbec05e1e167c2298dd12b3541ca7441a3f481555",
-				"dweb:/ipfs/QmVHpMGXNUySazWUBhQxkxMyTkBqMZPWQocNc1WfDY2BES"
+				"bzz-raw://cf063c32da1fd7d192d69b0492f1b960a08814479402eafbe2ce329ae1ac88e6",
+				"dweb:/ipfs/QmaCjc4dJLiveepjxiAhfYXbe337yttfCJUaXkf4JbuEtG"
 			]
 		}
 	},
