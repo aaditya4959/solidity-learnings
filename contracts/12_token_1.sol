@@ -21,6 +21,7 @@ contract BirCoin {
     constructor(){
         owner = msg.sender;
     }
+    // just a commit
 
     modifier onlyOwner {
         require ( msg.sender == owner, "Only owner can perform this operation.");

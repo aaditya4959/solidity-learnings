@@ -261,11 +261,11 @@
 	},
 	"sources": {
 		"contracts/12_token_1.sol": {
-			"keccak256": "0xc1a89f530e87b837937e73265fc3cd9430a307020604a216760928a9df436542",
+			"keccak256": "0x5b5ad8f140f0d97d65fe4002c3afe232f24c080fdcb8bb17fe4d5ca4d434d34b",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://cf063c32da1fd7d192d69b0492f1b960a08814479402eafbe2ce329ae1ac88e6",
-				"dweb:/ipfs/QmaCjc4dJLiveepjxiAhfYXbe337yttfCJUaXkf4JbuEtG"
+				"bzz-raw://f791ebdb21806981ad23c35415ccb636b6ef7499923fa38c3dfcf93f01e52e00",
+				"dweb:/ipfs/QmVby6RvTvyJvJXcbhU9fMJtcJ3czW6prg54m5XhNwMUhx"
 			]
 		}
 	},
